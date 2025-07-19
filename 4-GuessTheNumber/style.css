@@ -1,0 +1,275 @@
+/* Import Google Fonts - Using 'Roboto Mono' for the hacking feel */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
+
+/* General body and HTML styling for a sleek base */
+html {
+    /* Monospaced font for the hacking aesthetic */
+    font-family: 'Roboto Mono', monospace;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 300px;
+    max-width: 750px;
+    min-width: 480px;
+    margin: 0 auto;
+    /* Very deep, almost pure black background */
+    background: linear-gradient(135deg, #0a0a0a 0%, #000000 100%);
+    /* Subtle scanline/noise texture for digital feel */
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly9wwwLnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48ZyBmaWxsPSIjMDE2NjAxIiBmaWxsLW9wYWNpdHk9IjAuMDQiPjxwYXRoIGQ9Ik00MCAzNXY1YzAtMi4yMjgtMS43NzItNC00LTRoLTM1Yy0yLjIyOCAwLTQgNS43NzItNCA4djM1YzAgMi4yMjggMS43NzIgNCA0IDRoMzVjMi4yMjggMCA0IDEuNzcyIDQgMFY0LjIyOEwzNSA1Ljc3MlY0MGgyLjIyOEMyOC4yMjggMzkuNDI4IDMwIDM3LjM5OSAzMCAzNC43OTlWNC41OUMzMCA0LjIxOCAyNy40MTggMiAyNC44MDIgMiAyMi4yMDIgMiAyMCA0LjIxOCAyMCA0LjU5OXYyOS43OUMyMCAzMi4zOTkgMTcuMzk5IDM0LjM5OSAxNC43OTkgMzQuMzk5UzkuMzk5IDMyLjM5OSA5LjM5OSAyOS43OTlWNC41OUM5LjM5OSA0LjIxOCA2LjcxOCAyIDQuNzk5IDIgMi4yNTMgMiAwIDQuMjE4IDAgNi45OXYzMC43NjdjMCAyLjI1MyAyLjI1MyA0IDQuNzk5IDRzNC0yLjc0NyA0LTRWNC41OUM4IDQuMjM0IDEwLjU4MiA1LjA1NyAxMi42OTkgNC44NzlWNHM0Ljc5OS0uMDc4IDQuNzk5IDMuOTIydjI2LjY4MmMwIDIuMjIzIDMuMTQ1IDIuNzgyIDQuNzk5IDAuNjY2VjQuMDkzYzAtMi4yMjggMi4yMjgtNCA0LDRoNnYyNS44OTFjMCAyLjIyOCAzLjExMiAyLjc2OSA0LjQyMyAwLjE0Nkw0MCAzNS42NjZWNDAuNjk5QzQwIDQyLjg5OSA0Mi4yMTkgNDQuNTk5IDQ0LjQ5OSAzNC41OUM0NC41NjIgMzIuNDY0IDQ0LjIyOCA0MCA0MiA0MFoiLz48L2c+PC9nPjwvc3ZnPg=='); /* Subtle dark green grid/noise */
+    color: #00ff00; /* Neon green for primary text */
+    line-height: 1.6;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Optional: Subtle background animation */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top left, rgba(0, 255, 0, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at bottom right, rgba(0, 255, 0, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+    animation: backgroundPulse 15s infinite alternate ease-in-out;
+    opacity: 0.8; /* Slightly more visible pulse */
+}
+
+/* Wrapper for the main content - more stark, less rounded */
+#wrapper {
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    /* Stark dark background for the container */
+    background: linear-gradient(145deg, #101010 0%, #050505 100%);
+    border-radius: 8px; /* Sharper corners */
+    box-shadow: 0 10px 30px rgba(0, 255, 0, 0.2), inset 0 0 15px rgba(0, 255, 0, 0.1); /* Stronger green shadow and inner glow */
+    border: 1px solid #006600; /* Solid dark green border */
+    backdrop-filter: blur(3px); /* Slightly less blur for sharper feel */
+    -webkit-backdrop-filter: blur(3px);
+    position: relative;
+    z-index: 2;
+    animation: fadeInScale 0.8s ease-out forwards;
+}
+
+/* Heading styles - Bold, glowing green */
+h1 {
+    font-family: 'Roboto Mono', monospace;
+    background: linear-gradient(90deg, #0a0a0a 0%, #000000 100%);
+    color: #00ff00; /* Pure neon green */
+    padding: 25px 0;
+    margin: -40px -40px 40px -40px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    font-size: 2.8em; /* Larger, more impactful */
+    letter-spacing: 3px; /* More prominent letter spacing */
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 0 0 20px rgba(0, 255, 0, 0.7); /* Intense green glow */
+    position: relative;
+    overflow: hidden;
+    border-bottom: 2px solid #00cc00; /* Solid green line for emphasis */
+}
+
+/* More prominent scanline/glitch effect on heading */
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Adjust to sit slightly below */
+    left: 0;
+    width: 100%;
+    height: 5px; /* Thicker line */
+    background: repeating-linear-gradient(90deg, #00ff00 0, #00ff00 2px, transparent 2px, transparent 8px); /* Scanline effect */
+    animation: scanLine 1s infinite steps(1); /* Glitchy scanline animation */
+    opacity: 0.3;
+}
+
+p {
+    font-family: 'Roboto Mono', monospace; /* Keep monospaced for body text too */
+    font-size: 1em; /* Slightly smaller for more "terminal" feel */
+    margin-bottom: 25px;
+    color: #00ff00; /* Green for all text */
+    font-weight: 400;
+    line-height: 1.5; /* Tighten line height slightly */
+}
+
+/* Input field styling - very utilitarian, glowing */
+#guessField {
+    color: #00ff00; /* Neon green text in input */
+    background-color: #0d0d0d; /* Very dark input background */
+    width: calc(100% - 20px);
+    max-width: 300px;
+    height: 60px; /* Slightly shorter, more terminal-like */
+    font-size: 1.8em; /* Still large and readable */
+    border-radius: 5px; /* Sharper corners */
+    border: 2px solid #00cc00; /* Bright green border */
+    text-align: center;
+    margin-top: 30px;
+    outline: none;
+    padding: 0 10px;
+    transition: border-color 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+    font-weight: 700; /* Bold input text */
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.3); /* Constant subtle green glow */
+}
+
+#guessField:focus {
+    border-color: #00ff00; /* Pure neon green border on focus */
+    box-shadow: 0 0 30px rgba(0, 255, 0, 0.9); /* Intense, wider green glow on focus */
+    background-color: #1a1a1a; /* Slight change in background on focus */
+}
+
+/* Buttons - Strong, glowing, digital */
+button {
+    background: #00ff00; /* Solid neon green for primary button */
+    color: #000; /* Black text for ultimate contrast */
+    width: 280px;
+    height: 65px; /* Taller, more substantial */
+    border-radius: 8px; /* Sharper corners */
+    font-size: 1.8em; /* Larger font */
+    border: none;
+    margin-top: 35px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 5px 20px rgba(0, 255, 0, 0.5); /* Strong green shadow */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+button:hover {
+    background: #00cc00; /* Darker green on hover */
+    transform: translateY(-3px) scale(1.01); /* Subtle lift */
+    box-shadow: 0 8px 25px rgba(0, 255, 0, 0.7); /* More intense green shadow */
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(0, 255, 0, 0.3);
+}
+
+#subt {
+    /* Secondary button - More subtle, but still green-tinged */
+    background: linear-gradient(90deg, #1a1a1a 0%, #2a2a2a 100%); /* Darker gray background */
+    color: #00ff00; /* Neon green text */
+    border: 1px solid #004400; /* Dark green border */
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 45px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+#subt:hover {
+    background: linear-gradient(90deg, #2a2a2a 0%, #1a1a1a 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0, 255, 0, 0.3); /* Subtle green glow on hover */
+}
+
+#subt:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Result and guess displays - Digital readouts */
+.lastResult, .guesses {
+    padding: 15px 20px;
+    margin-top: 25px;
+    border-radius: 5px; /* Sharper corners */
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+    backdrop-filter: blur(2px); /* Less blur */
+    -webkit-backdrop-filter: blur(2px);
+    box-shadow: inset 0 0 10px rgba(0, 255, 0, 0.1); /* Inner green glow */
+    border: 1px solid #005500; /* Dark green border */
+}
+
+.lastResult {
+    background-color: rgba(0, 15, 0, 0.7); /* Transparent very dark green */
+    color: #00ff00; /* Neon green text */
+}
+
+.guesses {
+    background-color: rgba(0, 20, 0, 0.7); /* Slightly different transparent green */
+    color: #00ff00;
+    margin-bottom: 30px;
+}
+
+#guess {
+    font-size: 5em; /* Even larger for impact */
+    margin-top: 80px; /* Adjust spacing */
+    color: #00ff00; /* Pure neon green for the main guess */
+    font-weight: 800;
+    text-shadow: 0 0 40px rgba(0, 255, 0, 1), 0 0 80px rgba(0, 255, 0, 0.6), 0 0 120px rgba(0, 255, 0, 0.3); /* Multiple layers for intense glow */
+    letter-spacing: 5px; /* More spacing for a digital readout feel */
+    animation: pulse 1.2s infinite alternate ease-in-out; /* Slightly faster pulse */
+}
+
+/* Keyframe Animations */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        text-shadow: 0 0 40px rgba(0, 255, 0, 1), 0 0 80px rgba(0, 255, 0, 0.6);
+    }
+    100% {
+        text-shadow: 0 0 50px rgba(0, 255, 0, 1), 0 0 90px rgba(0, 255, 0, 0.7);
+    }
+}
+
+@keyframes scanLine {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes backgroundPulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.05; /* More subtle pulse for background */
+    }
+    50% {
+        transform: scale(1.02);
+        opacity: 0.07;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.05;
+    }
+}
+
+/* Add an icon example: You'd typically use an icon library like Font Awesome for this */
+/* Example for a button (requires actual HTML like <button>Execute <i class="fas fa-terminal"></i></button>) */
+.button-icon {
+    font-size: 1.3em; /* Larger icon */
+    margin-left: 10px;
+    color: #000; /* Ensure icon is black for contrast */
+}
