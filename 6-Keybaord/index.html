@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event KeyCodes</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+ 
+
+  body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  }
+ 
+
+  nav {
+  background-color: #2c3e50;
+  padding: 1rem 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+ 
+
+  nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  }
+ 
+
+  nav a:hover {
+  background-color: #34495e;
+  }
+ 
+
+  .project {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: calc(100vh - 60px); /* Adjust for nav height */
+  padding: 2rem;
+  }
+ 
+
+  #insert {
+  background-color: #e0f7fa;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+ 
+
+  .key {
+  font-size: 1.5rem;
+  color: #00acc1;
+  margin-bottom: 1rem;
+  }
+ 
+
+  .key-details {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  }
+ 
+
+  .key-detail {
+  background-color: #bbdefb;
+  color: #1976d2;
+  padding: 1rem;
+  border-radius: 5px;
+  min-width: 80px;
+  }
+ 
+
+  .color {
+  color: #64b5f6;
+  }
+  </style>
+ </head>
+ <body>
+  <nav>
+  <a href="/" aria-current="page">Home</a>
+  </nav>
+  <div class="project">
+  <div id="insert">
+  <div class="key">Press any key to see the magic</div>
+  </div>
+  </div>
+ <script src="keyboard.js"></script>
+ </body>
+ </html>
